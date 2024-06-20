@@ -9,6 +9,7 @@
 
 
 
+
 struct game_map_t {
     int width, height;
     std::vector<int> map;
@@ -27,9 +28,9 @@ struct game_map_t {
     }
 };
 
-// New game map with multiple labyrinths going upwards
+
 game_map_t game_map1 = {
-        140, 15, { // Map width 30, height 15
+        140, 15, {
                 // Ground layer
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -37,21 +38,21 @@ game_map_t game_map1 = {
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-                0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
                 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1,1,1,1,1,0,0,0,0,0,1, 1, 1, 1, 1,1,1,1,1,1,1, 1, 1, 1, 1,1,1,1,1,1,1, 1, 1, 1, 1,1,1,1,1,1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1,1,1,1,1,0,0,0,0,0,1, 1, 1, 1, 1,1,1,1,1,1,1, 1, 1, 1, 1,1,1,1,1,1,1, 1, 1, 1, 1,1,1,0,0,1,1
         }
 };
 
 game_map_t game_map2 = {
-        30, 15, { // Map width 30, height 15
-                // Ground layer
+        30, 15, {
+
                 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -147,6 +148,10 @@ bool is_on_the_ground(player_t player, const game_map_t &map) {
     return map.get(player.p.v.x, player.p.v.y + 0.01) > 0;
 }
 
+
+
+
+
 player_t update_player(player_t player_old, const game_map_t &map, double dt,
                        std::shared_ptr<SDL_Texture> player_texture,
                        std::shared_ptr<SDL_Texture> move2_right,
@@ -155,133 +160,142 @@ player_t update_player(player_t player_old, const game_map_t &map, double dt,
                        std::shared_ptr<SDL_Texture> fight2_texture) {
     player_t player = player_old;
 
-    // Apply gravity only if the player is not on the ground
-    if (!is_on_the_ground(player_old, map)) player_old.a.v.y = 10; // gravity
+    const double gravity = 10.0;
+    const double friction = 0.8;
+    const double jump_speed = 7.0;
+    const double ground_level = map.height - 1;
 
-    player.p = player_old.p + (player_old.v * dt) + (player_old.a * dt * dt) * 0.5;
+
+    if (!is_on_the_ground(player_old, map)) {
+        player.a.v.y = gravity;
+    } else {
+        player.a.v.y = 0.0;
+    }
+
+
+    player.p = player_old.p + (player_old.v * dt) + (player_old.a * dt * dt * 0.5);
     player.v = player_old.v + (player_old.a * dt);
-    player.v = player.v * 0.99;
 
-    if (player.p.v.x < 0) {
-        player.p.v.x = 0;
+
+    player.v.v.x *= friction;
+
+
+    if (fabs(player.v.v.x) < 0.1) {
         player.v.v.x = 0;
     }
 
-    if (player.p.v.y < 0) {
-        player.p.v.y = 0;
-        player.v.v.y = 0;
-    }
-    if (player.p.v.y > current_map.height - 1) {
-        player.p.v.y = current_map.height - 1;
-        player.v.v.y = 0;
-    }
 
     std::vector<vect_t> collision_points = {
             {v:{-0.4, 0.0}},
-            {v:{0.4, 0.0}}
+            {v:{0.4, 0.0}},
+            {v:{-0.4, -0.1}},
+            {v:{0.4, -0.1}}
+
     };
     std::vector<vect_t> collision_mods = {
             {v:{0.0, -1.0}},
+            {v:{0.0, -1.0}},
+            {v:{0.0, -1.0}},
             {v:{0.0, -1.0}}
     };
+
     bool should_apply_jump = false;
 
     for (int i = 0; i < collision_points.size(); i++) {
         auto test_point = player.p + collision_points[i];
 
         if (is_in_collision(test_point, map)) {
-            if (collision_mods[i].v.y < 0) { // lift the player
+            if (collision_mods[i].v.y < 0) {
                 player.v.v.y = 0;
                 player.p.v.y = player_old.p.v.y;
+            } else if (collision_mods[i].v.y > 0) {
+                player.v.v.y = 0.1;
+            } else {
+
+                player.v.v.x = -player.v.v.x * 0.5;
+
+                player.p.v.x += collision_mods[i].v.x * 0.1;
             }
         }
-    }
-    // Apply movement based on keyboard input
-    if (player_old.a.v.x != 0) {
-        player.v.v.x += player_old.a.v.x * dt; // apply acceleration to velocity
-        player.facing = (player_old.a.v.x > 0); // set facing direction
 
-        // Allow jumping forward
+        // sprawdzanie czy jest kafelek
+        auto test_point_above = player.p + collision_points[i] + vect_t{v:{0.0, -1.1}};
+        if (is_in_collision(test_point_above, map)) {
+            should_apply_jump = true;
+        }
+    }
+
+
+    if (player_old.a.v.x != 0) {
+        player.v.v.x += player_old.a.v.x * dt * 20.0;
+        player.facing = (player_old.a.v.x > 0); // facing
+
+        // skok
         if (should_apply_jump && is_on_the_ground(player_old, map)) {
-            const double jump_speed = 8.0; // Adjust the jump speed as needed
             player.v.v.y = -jump_speed;
 
-            // Adjust horizontal velocity based on movement direction
-            if (player_old.a.v.x > 0) {
-                player.v.v.x += jump_speed / 2; // Jump forward to the right
-            } else if (player_old.a.v.x < 0) {
-                player.v.v.x -= jump_speed / 2; // Jump forward to the left
-            }
-        }
-    } else {
-        // If no movement keys pressed, apply friction to slow down
-        const double friction = 0.8;
-        player.v.v.x *= friction;
 
-        // Stop completely if speed is low enough to prevent drifting
-        if (fabs(player.v.v.x) < 0.1) {
-            player.v.v.x = 0;
+            if (player_old.a.v.x > 0) {
+                player.v.v.x += jump_speed / 2; //skok do prawej
+            } else if (player_old.a.v.x < 0) {
+                player.v.v.x -= jump_speed / 2; // skok do lewej
+            }
         }
     }
 
+    // Update frame animation
     if (fabs(player.v.v.x) > 0.1) {
         player.frame_time += dt;
-        if (player.frame_time >= 0.1) { // Adjust the value for speed of animation
+        if (player.frame_time >= 0.09) {
             player.frame_time = 0;
-            player.current_frame = (player.current_frame + 1) % 2; // Cycle through move frames (0 and 1)
+            player.current_frame = (player.current_frame + 1) % 2;
         }
     } else if (is_on_the_ground(player, map)) {
-        player.current_frame = 0; // Set to idle frame when not moving
-
+        player.current_frame = 0;
     }
+
 
     if (player.is_attacking) {
-        // If attacking, do not allow horizontal movement
         player.v.v.x = 0;
-    } else {
-        // Apply movement based on keyboard input
-        if (player_old.a.v.x != 0) {
-            player.v.v.x += player_old.a.v.x * dt; // apply acceleration to velocity
-            player.facing = (player_old.a.v.x > 0); // set facing direction
-        } else {
-            // If no movement keys pressed, apply friction to slow down
-            const double friction = 0.8;
-            player.v.v.x *= friction;
-
-            // Stop completely if speed is low enough to prevent drifting
-            if (fabs(player.v.v.x) < 0.1) {
-                player.v.v.x = 0;
-            }
-        }
     }
 
+
+    if (&map == &game_map2) { // sprawdzenie, czy obiekt mapy jest ten sam co game_map2
+
+        player.p.v.x = std::max(0.0, std::min(player.p.v.x, static_cast<double>(map.width - 1)));
+    } else {
+
+        player.p.v.x = std::max(0.0, player.p.v.x);
+    }
+
+    player.p.v.y = std::max(0.0, std::min(player.p.v.y, ground_level));
+
+
+
     return player;
+
 }
+
+
+
+
+
 
 
 
 void update_camera(camera_t &camera, const player_t &player, const game_map_t &map) {
-    // Margines, który pozwala graczowi przemieszczać się bez ruszania kamery
-    int margin_x = camera.width / 2;
-    int margin_y = camera.height / 2;
 
-    // Oblicz docelową pozycję kamery, uwzględniając margines
-    int target_x = static_cast<int>(player.p.v.x * TILE_SIZE - margin_x);
-    int target_y = static_cast<int>(player.p.v.y * TILE_SIZE - margin_y);
+    camera.x = static_cast<int>(player.p.v.x * TILE_SIZE - camera.width / 3);
+    camera.y = static_cast<int>(player.p.v.y * TILE_SIZE - camera.height / 3);
 
-    // Ogranicz kamery do granic mapy
-    if (target_x < 0) target_x = 0;
-    if (target_y < 0) target_y = 0;
-    if (target_x > map.width * TILE_SIZE - camera.width) target_x = map.width * TILE_SIZE - camera.width;
-    if (target_y > map.height * TILE_SIZE - camera.height) target_y = map.height * TILE_SIZE - camera.height;
+    // ograniczanie kamer
+    if (camera.x < 0) camera.x = 0;
+    if (camera.y < 0) camera.y = 0;
+    if (camera.x > map.width * TILE_SIZE - camera.width) camera.x = map.width * TILE_SIZE - camera.width;
+    if (camera.y > map.height * TILE_SIZE - camera.height) camera.y = map.height * TILE_SIZE - camera.height;
 
-    // Współczynnik intensywnej interpolacji liniowej
-    const float interpolation_factor = 0.2f; // Możesz dostosować wartość w zakresie 0 do 1
-
-    // Zastosuj intensywną interpolację liniową do płynnego poruszania kamery
-    camera.x = static_cast<int>(camera.x + interpolation_factor * (target_x - camera.x));
-    camera.y = static_cast<int>(camera.y + interpolation_factor * (target_y - camera.y));
 }
+
 
 
 
@@ -292,19 +306,19 @@ void update_camera(camera_t &camera, const player_t &player, const game_map_t &m
 
 
 void draw_map(SDL_Renderer *renderer, const game_map_t &map, const camera_t &camera, std::shared_ptr<SDL_Texture> tex) {
-    // Ustal widoczne granice na podstawie pozycji kamery
+    // ustalanie widocznych granic na podstawie pozycji kamery
     int startX = camera.x / TILE_SIZE;
     int startY = camera.y / TILE_SIZE;
     int endX = (camera.x + camera.width) / TILE_SIZE;
     int endY = (camera.y + camera.height) / TILE_SIZE;
 
-    // Upewnij się, że granice są w zakresie mapy
+    // sprawdzanie czy granice sa w zasiegu mapy
     if (startX < 0) startX = 0;
     if (startY < 0) startY = 0;
     if (endX >= map.width) endX = map.width - 1;
     if (endY >= map.height) endY = map.height - 1;
 
-    // Renderuj tylko widoczne kafelki
+    // renderowanie
     for (int y = startY; y <= endY; y++) {
         for (int x = startX; x <= endX; x++) {
             SDL_Rect dst = { x * TILE_SIZE - camera.x, y * TILE_SIZE - camera.y, TILE_SIZE, TILE_SIZE };
@@ -320,31 +334,27 @@ void draw_map(SDL_Renderer *renderer, const game_map_t &map, const camera_t &cam
 
 
 
+
+
 void handle_combat(player_t &player,
                    std::shared_ptr<SDL_Texture> player_texture,
                    std::shared_ptr<SDL_Texture> move2_texture,
                    std::shared_ptr<SDL_Texture> move3_texture,
                    std::shared_ptr<SDL_Texture> fight1_texture,
                    std::shared_ptr<SDL_Texture> fight2_texture) {
-    // Attack logic triggered by pressing space
+
     if (player.is_attacking) {
-        // Check if attack collides with enemy (simplified check within 0.5 units)
-        // For single player game, assume enemy's position or any other collision logic
-        // For simplicity, we'll just simulate an attack here
+
         if (fabs(player.p.v.x - enemy_position.v.x) < 0.5 &&
             fabs(player.p.v.y - enemy_position.v.y) < 0.5) {
-            // Damage to enemy (change as needed)
-            // For example, decrease enemy's health
             enemy_health -= 10;
 
-            // Change player's animation to show attack frames
+
             player.textures = {player_texture, fight1_texture, fight2_texture};
-            // Set player's current frame to the first attack frame
+
             player.current_frame = 1;
 
-            // End player's attack animation after a duration (simulate here)
-            // You can implement a timer or use frame counting logic to control animation duration
-            // Here, we'll reset attack state after a short duration (simulation)
+
             player.is_attacking = false;
         }
     }
@@ -369,9 +379,8 @@ int main(int argc, char *argv[]) {
     SDL_Window *window;
     SDL_Renderer *renderer;
 
-    int initial_window_width = 640; // Szerokość okna przy starcie aplikacji
-    int initial_window_height = 480; // Wysokość okna przy starcie aplikacji
-
+    int initial_window_width = 640;
+    int initial_window_height = 480;
 
 
 
@@ -423,6 +432,8 @@ int main(int argc, char *argv[]) {
     camera.width = 640;
     camera.height = 480;
 
+
+
     double game_time = 0.;
     steady_clock::time_point current_time = steady_clock::now();
 
@@ -435,11 +446,11 @@ int main(int argc, char *argv[]) {
                     break;
                 case SDL_WINDOWEVENT:
                     if (event.window.event == SDL_WINDOWEVENT_RESIZED) {
-                        // Pobierz nowe wymiary okna
+
                         int new_width, new_height;
                         SDL_GetWindowSize(window, &new_width, &new_height);
 
-                        // Uaktualnij kamery na podstawie zmiany rozmiaru okna
+
                         double width_ratio = static_cast<double>(new_width) / initial_window_width;
                         double height_ratio = static_cast<double>(new_height) / initial_window_height;
 
@@ -448,11 +459,11 @@ int main(int argc, char *argv[]) {
                         camera.width = new_width;
                         camera.height = new_height;
 
-                        // Zaktualizuj również początkowe wymiary okna
+
                         initial_window_width = new_width;
                         initial_window_height = new_height;
 
-                        // Dodatkowo, uaktualnij kamerę w funkcji update_camera
+
                         update_camera(camera, player, current_map);
                     }
                     break;
@@ -488,11 +499,13 @@ int main(int argc, char *argv[]) {
             }
         }
         if (player.p.v.x > current_map.width) {
-            current_map = game_map2; // Przełącz na mapę 2 przy przekroczeniu prawej granicy mapy 1
-            player.p.v.x = 0; // Zresetuj pozycję gracza
+            current_map = game_map2;
+            player.p.v.x = 0; // resetowanie pozycji gracza
+            update_camera(camera, player, current_map);
         } else if (player.p.v.x < 0) {
-            current_map = game_map1; // Przełącz z powrotem na mapę 1 przy przekroczeniu lewej granicy mapy 2
-            player.p.v.x = current_map.width - 1; // Zresetuj pozycję gracza
+            current_map = game_map1; // przełączanie z powrotem na mapę 1 przy przekroczeniu lewej granicy mapy 2
+            player.p.v.x = current_map.width - 1; // resetowanie pozycji gracza
+            update_camera(camera, player, current_map);
         }
 
         game_time += dt;
@@ -527,7 +540,11 @@ int main(int argc, char *argv[]) {
         draw_map(renderer, current_map, camera, tiles_texture);
 
 
-        SDL_Rect player_rect = { (int)(player.p.v.x * TILE_SIZE - (TILE_SIZE / 2)), (int)(player.p.v.y * TILE_SIZE - TILE_SIZE), 64, 128 };
+        SDL_Rect player_rect = {
+                static_cast<int>(player.p.v.x * TILE_SIZE - camera.x),
+                static_cast<int>(player.p.v.y * TILE_SIZE - camera.y-128),
+                64, 128
+        };
 
         SDL_RendererFlip flip = player.facing ? SDL_FLIP_NONE : SDL_FLIP_HORIZONTAL;
         SDL_RenderCopyEx(renderer, player.textures[player.current_frame].get(), NULL, &player_rect, 0, NULL, flip);
